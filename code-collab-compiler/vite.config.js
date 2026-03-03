@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import basicSsl from '@vitejs/plugin-basic-ssl'
 
 // https://vite.dev/config/
 export default defineConfig({
   // global:'window',
-  plugins: [react(), basicSsl()],
+  plugins: [react()],
   server:{
-    port:443,
-    https: true
+    port:80
   }
 })
