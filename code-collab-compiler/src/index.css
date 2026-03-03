@@ -1,0 +1,200 @@
+
+/* Custom Button Styles */
+.btn {
+  border-radius: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.btn-outline-light {
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.btn-outline-light:hover {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+.btn-outline-secondary {
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+.nav{
+  box-shadow: 0px 5px 16px rgb(177, 177, 177);
+}
+.bg-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+.text-primary{
+  color: #4f46e5 !important;
+}
+.main-canv{
+  padding-top: 110px;
+  color: black;
+}
+
+.shad{
+    box-shadow: 0px 6px 16px rgb(177, 177, 177);
+}
+
+.notes {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.notes:focus,
+.notes:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.img-box {
+  width: 75%;
+}
+
+@media (max-width: 991px) {
+  .img-box {
+    width: 30%;
+  }
+  @media (min-width: 769px) {
+    .img-box {
+      width: 50%;
+    }
+  }
+}
+.form-control-cust {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #64748b;
+  width: 100%;
+  padding: 10px;
+  background-color: aliceblue;
+  transition: box-shadow 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.form-control-cust:focus {
+  outline: none;
+  border-radius: 8px;
+  transform: translateY(-4px); /* move input upward */
+  box-shadow: -7px 8px  0 rgba(0, 0, 0, 0.3); /* shadow below */
+  border: 1px solid #af1ead; /* bottom border color on focus */
+}
+.form-control-cust-dark {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #64748b;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: aliceblue;
+  transition: box-shadow 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.form-control-cust-dark:focus {
+  outline: none;
+  border-radius: 8px;
+  transform: translateY(-4px); /* move input upward */
+  box-shadow: -7px 8px  0 rgba(255, 255, 255); /* shadow below */
+  border: 1px solid #af1ead; /* bottom border color on focus */
+}
+.smooth{
+  transition: all smooth;
+}
+
+.bg-darkmode{
+  background-color: rgb(14,19,24);
+}
+.bg-prime-dark{
+  background-color: rgb(10,14,20);
+  color: #f1f5f9;
+}
+.shad-dark{
+  border: solid 1px rgb(128, 128, 128) ;
+  box-shadow: 0px 6px 16px rgb(10, 10, 10);
+}
+/* Works in Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 6px;               /* slim like mobile */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;   /* no track at all */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.4); /* subtle floating bar */
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.6); /* darker when hovered */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;                       /* slim scrollbar */
+  scrollbar-color: rgba(0,0,0,0.4) transparent; /* only the thumb */
+}
+
+/* AI Intelligence styles */
+.ai-response p {
+  margin: 4px 0;
+  line-height: 1.65;
+}
+
+.ai-response code {
+  font-size: 0.88em;
+}
+
+.ai-response strong {
+  font-weight: 600;
+}
