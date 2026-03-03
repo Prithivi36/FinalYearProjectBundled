@@ -8,7 +8,7 @@ function App() {
     const [dark,setDark] =React.useState(true);
     React.useEffect(
         ()=>{
-            axios.post("http://135.235.196.75:8080/feedback",{
+            axios.post("/feedback",{
             message:"user"
             })
         },[]

@@ -5,7 +5,7 @@ import Stomp from 'stompjs';
 let stompClient = null;
 let currentSubscription = null
 // const BASE_URL ='https://back.colider.app/ws'
-const BASE_URL ='http://135.235.196.75:8080/ws'
+const BASE_URL ='/ws'
 export  const connectSocket = async (userId, onMessage) => {
   const socket = new SockJS(BASE_URL);
   stompClient = Stomp.over(socket);
@@ -49,7 +49,7 @@ export async function connectUserSocket(roomId,name,onMessage){
   }
 
 export function deleteUser(roomId,userId){
-  axios.post(`http://135.235.196.75:8080/delete/${roomId}/${userId}`)
+  axios.post(`/delete/${roomId}/${userId}`)
   sessionStorage.clear()
   location.reload();
 

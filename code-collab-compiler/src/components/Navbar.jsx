@@ -20,7 +20,7 @@ const Navbar = (props) => {
     const handleUnload =(event)=>{
       if(roomId && userId){
         sessionStorage.clear();
-        navigator.sendBeacon(`http://135.235.196.75:8080/delete/${roomId}/${userId}`, "{}")
+        navigator.sendBeacon(`/delete/${roomId}/${userId}`, "{}")
       }
     }
 
