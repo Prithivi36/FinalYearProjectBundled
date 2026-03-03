@@ -250,7 +250,8 @@ const AIIntelligence = ({ dark, code, language, onInjectCode }) => {
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
               placeholder="Enter Gemini API key..."
-              className={`form-control form-control-sm rounded-pill ${dark ? 'bg-prime-dark text-light border-dark' : ''}`}
+              className={`form-control form-control-sm rounded-pill ${dark ? 'text-light border-dark' : ''}`}
+              style={dark ? { backgroundColor: '#0A0E14', color: '#f1f5f9' } : {}}
               onKeyDown={(e) => e.key === 'Enter' && saveApiKey()}
             />
             <button
@@ -325,9 +326,9 @@ const AIIntelligence = ({ dark, code, language, onInjectCode }) => {
               value={instruction}
               onChange={(e) => setInstruction(e.target.value)}
               placeholder={`Describe what ${language || ''} code you want to generate...\ne.g. "Write a function to sort an array using bubble sort"`}
-              className={`form-control form-control-sm rounded-4 ${dark ? 'bg-prime-dark text-light border-dark' : ''}`}
+              className={`form-control form-control-sm rounded-4 ${dark ? 'text-light border-dark' : ''}`}
               rows={3}
-              style={{ resize: 'none', fontSize: '0.85rem' }}
+              style={dark ? { resize: 'none', fontSize: '0.85rem', backgroundColor: '#0A0E14', color: '#f1f5f9' } : { resize: 'none', fontSize: '0.85rem' }}
               onKeyDown={(e) => { if (e.key === 'Enter' && e.ctrlKey) generateCode() }}
             />
             <button
