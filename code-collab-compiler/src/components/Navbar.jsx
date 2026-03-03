@@ -20,7 +20,7 @@ const Navbar = (props) => {
     const handleUnload =(event)=>{
       if(roomId && userId){
         sessionStorage.clear();
-        navigator.sendBeacon(`https://back.colider.app/delete/${roomId}/${userId}`, "{}")
+        navigator.sendBeacon(`http://135.235.196.75:8080/delete/${roomId}/${userId}`, "{}")
       }
     }
 

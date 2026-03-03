@@ -4,7 +4,7 @@ import React from 'react'
 const FeedBackModal = () => {
     const [rep,setRep]=React.useState("")
     function handleSubmit(){
-        axios.post("https://back.colider.app/feedback",{
+        axios.post("http://135.235.196.75:8080/feedback",{
             message:rep
         }).catch(
             err=>alert("something went wrong")

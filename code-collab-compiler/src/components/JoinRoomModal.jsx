@@ -10,7 +10,7 @@ const JoinRoomModal = (props) => {
     if (roomCode.trim()) {
       sessionStorage.setItem('room',roomCode)
       sessionStorage.setItem('userId',name)
-      axios.get("http://localhost:8081/rtcToken?channelName="+roomCode).then(
+      axios.get("http://135.235.196.75:8081/rtcToken?channelName="+roomCode).then(
         res=>{
           sessionStorage.setItem('agora-token',res.data.key)
         }
